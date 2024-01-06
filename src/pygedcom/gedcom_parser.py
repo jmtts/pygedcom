@@ -42,7 +42,7 @@ class GedcomParser:
         :return: The content of the GEDCOM file.
         :rtype: str
         """
-        with open(self.path, "r") as file:
+        with open(self.path, "r", encoding="utf-8") as file:
             data = file.read()
         return data
 
